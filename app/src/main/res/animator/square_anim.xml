@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially">
+
+    <set android:ordering="together">
+        <objectAnimator
+            android:duration="5000"
+            android:propertyName="x"
+            android:startOffset="0"
+            android:valueFrom="0.0"
+            android:valueTo="50.0"
+            android:interpolator="@anim/cycle_interpolator_2"/>
+        <objectAnimator
+            android:duration="5000"
+            android:propertyName="y"
+            android:startOffset="0"
+            android:valueFrom="0.0"
+            android:valueTo="50.0"
+            android:interpolator="@anim/cycle_interpolator_3"/>
+        <objectAnimator
+            android:duration="5000"
+            android:propertyName="alpha"
+            android:startOffset="0"
+            android:valueFrom="0.0"
+            android:valueTo="0.6"
+            android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+    </set>
+
+    <set android:ordering="together">
+        <objectAnimator
+            android:duration="5000"
+            android:propertyName="x"
+            android:startOffset="0"
+            android:valueFrom="0.0"
+            android:valueTo="50.0"
+            android:interpolator="@anim/cycle_interpolator_3"/>
+        <objectAnimator
+            android:duration="5000"
+            android:propertyName="y"
+            android:startOffset="0"
+            android:valueFrom="0.0"
+            android:valueTo="50.0"
+            android:interpolator="@anim/cycle_interpolator_2"/>
+        <objectAnimator
+            android:duration="5000"
+            android:propertyName="alpha"
+            android:startOffset="0"
+            android:valueFrom="0.6"
+            android:valueTo="0.0"
+            android:interpolator="@android:anim/accelerate_decelerate_interpolator"/>
+    </set>
+
+</set>

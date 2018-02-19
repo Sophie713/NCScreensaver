@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="together">
+
+    <objectAnimator
+        android:duration="2000"
+        android:propertyName="background"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        android:valueFrom="@drawable/screensaver_badge_circle"
+        android:valueTo="@drawable/screensaver_badge_circle_black" />
+
+    <set xmlns:android="http://schemas.android.com/apk/res/android"
+        android:ordering="sequentially">
+
+    <objectAnimator
+        android:duration="600"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:propertyName="rotationX"
+        android:startOffset="5000"
+        android:valueFrom="0.0"
+        android:valueTo="90.0" />
+
+    <objectAnimator
+        android:duration="600"
+        android:interpolator="@android:anim/overshoot_interpolator"
+        android:propertyName="rotationX"
+        android:startOffset="0"
+        android:valueFrom="-90.0"
+        android:valueTo="0.0" />
+
+    <objectAnimator
+        android:duration="600"
+        android:interpolator="@android:anim/accelerate_interpolator"
+        android:propertyName="rotationX"
+        android:startOffset="5000"
+        android:valueFrom="0.0"
+        android:valueTo="-90.0" />
+
+    <objectAnimator
+        android:duration="600"
+        android:interpolator="@android:anim/overshoot_interpolator"
+        android:propertyName="rotationX"
+        android:startOffset="0"
+        android:valueFrom="90.0"
+        android:valueTo="0.0" />
+    </set>
+</set>
+
